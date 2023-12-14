@@ -217,7 +217,7 @@ section .header{
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    
+    left: 30px;
 }
 .container-project .box{
     padding: 3.5rem 1.25rem;
@@ -277,6 +277,34 @@ section .header{
 .container-project span{
     color: #fff;
     display: inline-block;
+}
+.ilustration{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.ilustration .pages-ilustration{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.ilustration .pages-ilustration:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+.ilustration .pages-ilustration h4{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ilustration img{
+    width: 350px;
 }
 
 footer{
@@ -421,7 +449,7 @@ footer .column > a:hover{
         grid-template-columns: repeat(2, 1fr);
     }
     .container-project{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     footer{
         grid-template-columns: 1fr 200px;
