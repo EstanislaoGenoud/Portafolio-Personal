@@ -278,6 +278,7 @@ section .header{
     color: #fff;
     display: inline-block;
 }
+
 .ilustration{
     margin-top: 4rem;
     display: grid;
@@ -290,12 +291,13 @@ section .header{
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+    height: 550px;
 }
 .ilustration .pages-ilustration:hover{
     background-color: #323232;
     border-color: #fff;
 }
-.ilustration .pages-ilustration h4{
+.ilustration .pages-ilustration h4 {
     display: flex;
     justify-content: center;
     color: #fff;
@@ -303,8 +305,19 @@ section .header{
     font-size: 1.2rem;
     font-weight: 600;
 }
+.ilustration .pages-ilustration p{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
 .ilustration img{
     width: 350px;
+    /* height: 250px; */
+    border-radius: 15px;
+    margin-bottom: 1rem;
 }
 
 footer{
