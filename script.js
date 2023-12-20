@@ -14,7 +14,7 @@ const link3 = document.getElementById("link3");
 const link4 = document.getElementById("link4");
 
 link1.addEventListener('click', () => {
-    scrollToElement('.')
+    scrollToElement('')
 });
 
 link2.addEventListener('click', () => {
