@@ -190,6 +190,7 @@ section .header{
 }
 
 .features .card h4{
+    margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
