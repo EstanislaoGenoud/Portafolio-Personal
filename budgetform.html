@@ -1,27 +1,110 @@
-<!-- <!DOCTYPE html>
-<html lang="en" class="formulario-presupuesto">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./style.css">
-    <title>Formulario de Presupuesto</title>
+    <title>Personal Portfolio</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container-presupueto">
-            <a href="./index.html" class="navbar-brand">
-                <img src="./images/logo.png" class="logo">
+    
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="./images/E-code isotipo Blanco.svg">
             </a>
         </div>
-        <div id="navMenu" class="navbar-menu">
-            <div class="navbar-item">
-                <p class="buttons">
-                    <a href="./index.html">
-                        <i class="ri-close-fill icon"></i>
-                    </a>
-                </p>
+
+        <ul class="nav-links">
+            <li class="link"><a href="./index.html">Inicio</a></li>
+            <li id="link1" class="link"><a
+                href="./index.html">Características</a></li>
+            <li id="link2" class="link"><a href="./index.html">Nuestros Trabajos</a></li>
+            <li id="link3" class="link"><a href="#">Presupuesto</a></li>
+            <li id="link4" class="link"><a href="./index.html">Acerca De</a></li>
+        </ul>
+        <button class="btn">Contratame</button>
+    </nav>
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Formulario de contacto</h2>
+            <p>Este formulario de contacto nos va a servir para coordinar una primer reunion ya sea virtual o presencial, en el cual nos vas a indicar que tipo de trabajo queres realizar, si utilizamos una de nuestras plantillas ya definidas o más customizado.</p>
+            <a href=""><i class="ri-mail-line"></i>estanicodeg@gmail.com</a>
+            <a href=""><i class="ri-phone-line"></i>+54 9 3329-559691</a>
+            <a href=""><i class="ri-road-map-line"></i>San Pedro, Buenos Aires, Argentina</a>
+        </div>
+        <form action="#" autocomplete="off">
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+            <label for="">Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingresa tu apellido" class="campo">
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+            <label for="favoriteOnly">Selecciona el tipo de trabajo</label>
+            <select name="favoriteOnly" id="favoriteOnly" class="campo">
+                <option>-</option>
+                <option>Arreglo de bugs</option>
+                <option>Correccion de codigo</option>
+                <option>Pagina Web</option>
+                <option>Sitio Web</option>
+                <option>E-Commerce</option>
+                
+            </select>
+            <label for="cantidad">Cantidad de paginas</label>
+            <select name="cantidad" id="cantidad" class="campo">
+                <option>-</option>
+                <option>1 pagina</option>
+                <option>2 paginas</option>
+                <option>3 paginas</option>
+                <option>4 paginas</option>
+                <option>5 o Más paginas</option>
+
+            </select>
+            <label for="plantilla">Plantilla Personalizada</label>
+            <select name="plantilla" id="plantilla" class="campo">
+                <option>-</option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="presupuesto">Presupuesto</label>
+            <select name="presupuesto" id="presupuesto" class="campo">
+                <option>-</option>
+                <option>100 a 499</option>
+                <option>500 a 999</option>
+                <option>1000 a 4999</option>
+                <option>5000 o Más</option>
+            </select>
+
+            <textarea name="mensaje" placeholder="Contanos tu idea para una proxima reunion virtual o presencial"></textarea>
+            <input type="submit" name="enviar" value="enviar mensaje" class="btn">
+        </form>
+    </div>
+
+
+    <footer id="footer" class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="socials">
+                <a href="https://www.instagram.com/estani_genoud/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/in/estanislao-genoud-a6946020b/" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="#"><i class="ri-mail-line"></i></a>
             </div>
         </div>
-    </nav>
+
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright © 2023 Estanislao Genoud. All Rights Reserved.
+    </div>
 </body>
-</html> -->
+</html>

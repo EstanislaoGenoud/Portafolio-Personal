@@ -1,0 +1,23 @@
+💡Formulario de presupuesto y contacto💡
+
+1- barra de navegacion simple 📌
+    1.a- inicio
+
+2- formulario de presupuesto;
+    1- Nombre.📌
+    1.a- Apellido.📌
+    1.b- correo electronico.📌
+    2.a- formulario con desplegable;📌
+                                    pagina web(1), estatica(plantilla predefinida).📌
+                                    sitio web(desde 2 paginas), estatica, responsive (plantilla predefinida).📌
+                                    sitio web(desde 2 paginas), interactiva, responsive (plantilla predefinida).📌
+                                    E-commerce, interactivo, galeria de productos,responsive (plantilla predefinida).📌
+    
+    2.b- seleccion de cantidad de paginas(si es una pagina web dejar en 0).
+    2.c- Presupuesto a disposicion(Seleccionar el presupuesto disponible).📌
+    2.d- Seleccion de pagina web, sitio web o E-commerce mas customizado.
+    3- cuadro de comentario para informar la idea para una proxima reunion (virtual o presencial).📌
+
+
+3- Footer 📌
+    1- == index

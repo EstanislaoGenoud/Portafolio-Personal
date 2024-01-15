@@ -36,6 +36,9 @@ nav{
 .nav-logo{
     max-width: 100px;
 }
+.nav-logo img{
+    width: 70px;
+}
 
 .nav-links{
     list-style: none;
@@ -279,47 +282,122 @@ section .header{
     color: #fff;
     display: inline-block;
 }
-
-.ilustration{
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+.container-card{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-.ilustration .pages-ilustration{
+.card-section{
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.card{
     background-color: #27272a;
-    padding: 1rem;
+    padding: 1.75rem;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
-    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.ilustration .pages-ilustration:hover{
+.card:hover{
     background-color: #323232;
     border-color: #fff;
 }
-.ilustration .pages-ilustration h4 {
-    display: flex;
-    justify-content: center;
+.card .card-header{
+    flex-basis: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     color: #fff;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
 }
-.ilustration .pages-ilustration p{
-    display: flex;
-    justify-content: center;
+.card .card-body{
+    flex-basis: 100%;
+    margin-top: 1.2rem;
+}
+.card .card-body p{
+    margin: 0;
     color: #fff;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
 }
-.ilustration img{
-    width: 350px;
-    /* height: 250px; */
+.card .card-body a{
+    text-decoration: none;
+    color: #fafbff;
+    display: inline-block;
+    padding: 0.7rem 1.75rem;
+    border: 1px solid transparent;
+    background-color: #0e171f;
+    border-radius: 1.75rem;
+    margin-top: 1.2rem;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in;
+}
+.card .card-body a:hover{
+    background-color: transparent;
+    border-color: #0e171f;
+    color: #0e171f;
+}
+.card .card-body img{
     border-radius: 15px;
     margin-bottom: 1rem;
 }
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: .9375rem;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+}
+.container-form p{
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.container-form a{
+    font-size: 1.0625rem;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+.container-form a:hover{
+    color: #1d4ed8;
+}
+.container-form a i{
+    color: #1d4ed8;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: .9375rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form form label{
+    color: #fff;
+}
+
+
+
+
 
 footer{
     position: relative;
@@ -330,7 +408,7 @@ footer{
 }
 
 footer .column .logo{
-    max-width: 100px;
+    max-width: 75px;
     margin-bottom: 2rem;
 }
 
@@ -387,67 +465,6 @@ footer .column > a:hover{
     font-size: 0.8rem;
     text-align: center;
 }
-
-/* .formulario-presupuesto {
-    width: 100%;
-}
-.navbar {
-    padding: 1.2rem 0;
-    box-shadow: none;
-    z-index: none;
-}
-.navbar .container-presupuesto{
-    width: 1200px;
-    display: flex;
-    align-items: stretch;
-    min-height: 3.25rem;
-    flex-grow: 1;
-    margin: 0 auto;
-    position: relative;
-}
-.navbar .logo {
-    width: 75px;
-}
-.navbar .icon{
-    color: #fff;
-}
-.navbar-brand{
-    align-items: stretch;
-    display: flex;
-    flex-shrink: 0;
-    min-height: 3.25rem;
-}
-.navbar-item{
-    flex-grow: 0;
-    flex-shrink: 0;
-    color: #1e40af;
-    position: relative;
-    line-height: 1.5;
-}
-.navbar .navbar-menu{
-    box-shadow: none;
-    padding: 0.5rem 0;
-    text-align: center;
-    height: 66px;
-    width: 1200px;
-    z-index: auto;
-    line-height: 27px;
-    box-sizing: border-box;
-    position: static;
-}
-.navbar .buttons{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    color: #1e40af;
-} */
-
-
-
-
-
-
 
 @media (width < 900px){
     .nav-links {
