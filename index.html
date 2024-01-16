@@ -9,8 +9,8 @@
     <meta name="author" content="Estanislao Genoud">
     <link rel="icon" href="./images/header.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
-    <!-- <script src="./script.js"></script> -->
     <link rel="stylesheet" href="style.css">
+    <script src="./JS/jquery.js"></script>
     <title>PortFolio Estanislao Genoud</title>
 </head>
 
@@ -25,11 +25,10 @@
 
         <ul class="nav-links">
             <li class="link"><a href="#">Inicio</a></li>
-            <li id="link1" class="link"><a
-                href="#caracteristicas">Características</a></li>
-            <li id="link2" class="link"><a href="#trabajos">Nuestros Trabajos</a></li>
-            <li id="link3" class="link"><a href="#presupuesto">Presupuesto</a></li>
-            <li id="link4" class="link"><a href="#footer">Acerca De</a></li>
+            <li id="link1" class="link"><a href="/#caracteristicas">Características</a></li>
+            <li id="link2" class="link"><a href="/#trabajos">Nuestros Trabajos</a></li>
+            <li id="link3" class="link"><a href="/#presupuesto">Presupuesto</a></li>
+            <li id="link4" class="link"><a href="/#footer">Acerca De</a></li>
         </ul>
         <a href="./budgetform.html" class="btn">Contratame</a>        
     </nav>
@@ -49,8 +48,8 @@
         </div>
     </header>
 
-    <section class="container">
-        <h2 id="caracteristicas" class="header">NUESTRAS CARACTERÍSTICAS</h2>
+    <section id="caracteristicas" class="container">
+        <h2  class="header">NUESTRAS CARACTERÍSTICAS</h2>
         <div class="features">
             <div class="card one ">
                 <span><i class="ri-bug-line"></i></span>
@@ -114,9 +113,9 @@
         </div>
     </section>
 
-    <section class="container-project">
+    <section id="presupuesto"  class="container-project">
         <div class="box">
-            <div id="presupuesto" class="columns level">
+            <div class="columns level">
                 <div class="column level-item">
                     <h2 class="title">Iniciar Proyecto</h2>
                 </div>
@@ -159,7 +158,34 @@
     </div>
 
 
+    <script>
+        // Código jQuery para desplazamiento suave
+        $(document).ready(function () {
+            $('#link1').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('#caracteristicas').offset().top
+                }, 1000);
+            });
 
+            $('#link2').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('#trabajos').offset().top
+                }, 1000);
+            });
+
+            $('#link3').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('#presupuesto').offset().top
+                }, 1000);
+            });
+
+            $('#link4').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('#footer').offset().top
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>
