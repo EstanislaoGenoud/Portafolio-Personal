@@ -219,7 +219,7 @@ section .header{
 }
 
 .container-project {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
     left: 30px;
@@ -348,6 +348,12 @@ section .header{
     grid-gap: 50px;
     margin-top: 90px;
 }
+.info-form{
+    flex: 0 0 45%;
+}
+form{
+    flex: 0 0 45%;
+}
 .container-form h2{
     margin-bottom: .9375rem;
     font-size: 35px;
@@ -387,8 +393,8 @@ section .header{
     outline: 0px;
 }
 .container-form form textarea{
-    max-width: 530px;
-    min-width: 530px;
+    max-width: 100%;
+    min-width: 100%;
     min-height: 140px;
     max-height: 150px;
 }
@@ -482,23 +488,42 @@ footer .column > a:hover{
     }
     .container-project{
         grid-template-columns: repeat(1, 1fr);
+        display: none;
+    }
+    .container-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-top: 60px;
+    }
+    .info-form,
+    form{
+        flex: 0 0 100%;
+    }
+    .container-form form textarea{
+        max-width: 100%;
+        min-width: 100%;
     }
     footer{
         grid-template-columns: 1fr 200px;
     }
-
 }
 @media (width < 600px){
     header .image::before{
         display: none;
     }
-
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .features{
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .container-project{
-        grid-template-columns: repeat(1, 1fr);
+    .container-form {
+        grid-template-columns: auto;
+        grid-gap: 10px; 
+        margin-top: 60px;
+    }
+    .info-form{
+        display: none;
     }
 
     footer{
