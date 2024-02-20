@@ -319,7 +319,7 @@ section .header{
     margin: 0;
     color: #fff;
 }
-.card .card-body a{
+.card .card-body .unete{
     text-decoration: none;
     color: #fafbff;
     display: inline-block;
